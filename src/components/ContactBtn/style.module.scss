@@ -1,0 +1,35 @@
+.support{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 60px;
+    height: 60px;
+    background-color: #3b3b3b;
+    border-radius: 50%;
+}
+
+.dots{
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span{
+        width: 4px;
+        height: 4px;
+        background-color: #3b3b3b;
+        border-radius: 50%;
+
+        &:not(:last-child){
+            margin-right: 3px;
+        }
+    }
+}
