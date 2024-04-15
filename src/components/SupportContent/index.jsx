@@ -1,9 +1,20 @@
+import Button from '../Button';
+import { VCcard } from '../../hook/useVCcard';
+
+import AvatarImg from '../../assets/images/logo.jpg';
+import { ReactComponent as WhatsapIcon } from '../../assets/images/whatsaap.svg';
 import css from './style.module.scss';
 
 const SupportContent = () => {
+  const { downloadTxtFile, CreateVCard } = VCcard();
+  const handelClickVcf = () => {
+    downloadTxtFile(CreateVCard());
+  };
+
   return (
     <div className={css.trigger}>
-      <h3> Alisa </h3>
+      <img className={css.avatar} width={60} height={60} src={AvatarImg} alt="avatar" />
+      <h3 className={css.name}> Alisa Kupinsky </h3>
       <p>Produktfotografin</p>
       <a className={css.tel} href="tel:+4915786606437">
         +4915786606437
@@ -12,14 +23,9 @@ const SupportContent = () => {
         <a href="mailto:daria-medved@gmx.de">daria-medved@gmx.de</a>
       </div>
 
-      <div className={''}>
-        <a className={''} href="https://wa.me/4917643434047" target="_blank" title="WhatsApp">
-          WhatsApp
-        </a>
-        <a rel="nofollow" href="/card/4Z9WyaeE/de.vcf">
-          Kontakt speichern
-        </a>
-      </div>
+      <Button to={'https://wa.me/4915228021236'} className={'btn border-btn'} title={'WhatsApp'} Icon={WhatsapIcon} />
+
+      <Button onClick={handelClickVcf} className={'btn button'} title={'Kontakt speichern'} />
     </div>
   );
 };

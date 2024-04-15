@@ -25,10 +25,10 @@
     // top: 50%;
     // left: 50%;
     // transform: translate(-50%, -50%);
-    max-width: calc(550px);
-    min-width: calc(320px - 30px);
+    width: calc( 100% - 30px);
+    max-width: 550px;
     margin: 60px 15px;
-    padding: 50px;
+    padding: 50px 25px;
     background-color: #ffffff;
     box-shadow: 0 4px 4px rgba(1, 2, 2, 0.2);
     border-radius: 5px;

@@ -1,0 +1,53 @@
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s ease;
+  border-radius: 8px;
+  padding: 12px 20px;
+  max-width: 300px;
+  margin: 0 auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 1;
+  width: 100%;
+  max-width: 300px;
+}
+
+.button {
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  border: 1px solid transparent;
+  background-color: #3b3b3b;
+
+  &:after {
+
+  }
+
+  &:disabled {
+    cursor: auto;
+  }
+
+  &:hover {
+
+  }
+
+  &:hover:after,
+  &:focus:after {
+
+  }
+}
+
+.border-btn {
+  border: 1px solid #3b3b3b;
+
+  &:hover {
+
+  }
+
+  & > svg {
+    margin-right: 10px;
+  }
+}
