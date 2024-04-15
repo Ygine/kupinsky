@@ -11,7 +11,6 @@ const ContactBtn = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const handleClickSupportBtn = (e) => {
-    console.log(e.target);
     setModalIsOpen(!modalIsOpen);
   };
 

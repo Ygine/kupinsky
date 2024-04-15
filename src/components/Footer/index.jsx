@@ -1,30 +1,29 @@
+import { Link } from 'react-router-dom';
 import { ReactComponent as Whatsap } from '../../assets/images/whatsaap.svg';
 import { ReactComponent as Instagram } from '../../assets/images/instagram.svg';
 
-import styles from './style.module.scss';
+import css from './style.module.scss';
 
 const Footer = () => {
   return (
-    <footer className={`${styles.footer}`}>
-      {/* <div className="back-to-top js-back-to-top">
-          <i className="fal fa-chevron-up"></i>
-        </div> */}
-      <ul className={`${styles.socialLinks}`}>
+    <footer className={`${css.footer}`}>
+      <div className="css."></div>
+      <ul className={`${css.socialLinks}`}>
         <li className="item">
-          <a title="whatsapp" className="link" target="_blank" rel="noopener noreferrer" href="#">
+          <Link title="whatsapp" className={css.link} to="https://wa.me/4915228021236">
             <Whatsap width={33} height={33} fill="#3d3d3d" />
-          </a>
+          </Link>
         </li>
         <li className="item">
-          <a title="instagram" className="link" target="_blank" rel="noopener noreferrer" href="#">
+          <Link title="instagram" className={css.link} to="https://www.instagram.com/alisaa.photo/">
             <Instagram width={33} height={33} fill="#3d3d3d" />
-          </a>
+          </Link>
         </li>
       </ul>
       <div className="footer-content">
-        <p className={styles.name}> Alisa Kupinsky </p>
-        <p className={styles.profession}> Produktfotografin aus Rastatt </p>
-        <p className={styles.copyright}>
+        <p className={css.name}> Alisa Kupinsky </p>
+        <p className={css.profession}> Produktfotografin aus Rastatt </p>
+        <p className={css.copyright}>
           ALLE INHALTE, INSBESONDERE TEXTE, FOTOGRAFIEN UND GRAFIKEN SIND URHEBERRECHTLICH GESCHÜTZT, ALLE RECHTE
           EINSCHLIESSLICH VERVIELFÄLTIGUNG, VERÖFFENTLICHUNG, BEARBEITUNG UND ÜBERSETZUNG, BLEIBEN VORBEHALTEN.
         </p>

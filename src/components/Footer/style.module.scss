@@ -1,7 +1,7 @@
 .footer{
-    background-color: #cee;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px 15px;
+    padding-bottom: 90px;
 }
 
 .socialLinks{
@@ -14,12 +14,23 @@
   }
 }
 
+.name{
+  margin-bottom: 5px;
+}
+
 .profession{
   margin-bottom: 15px;
+  font-size: 12px;
 }
 
 .copyright{
-    font-size: 10px;
+    font-size: 11px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.link{
+  cursor: pointer;
 }
 
 

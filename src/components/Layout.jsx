@@ -12,16 +12,13 @@ export default function Layout() {
     <>
       <header className="">
         <CustomLink to="/" className="">
-          {' '}
-          Home{' '}
+          Home
         </CustomLink>
         <CustomLink to="/posts" className="">
-          {' '}
-          Blog{' '}
+          Blog
         </CustomLink>
         <CustomLink to="/about" className="">
-          {' '}
-          About{' '}
+          About
         </CustomLink>
       </header>
 

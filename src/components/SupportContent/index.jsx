@@ -24,7 +24,6 @@ const SupportContent = () => {
       </div>
 
       <Button to={'https://wa.me/4915228021236'} className={'btn border-btn'} title={'WhatsApp'} Icon={WhatsapIcon} />
-
       <Button onClick={handelClickVcf} className={'btn button'} title={'Kontakt speichern'} />
     </div>
   );
