@@ -4,7 +4,7 @@ import { CSSTransition } from 'react-transition-group';
 import Modal from '../Modal';
 import SupportContent from '../SupportContent';
 
-import styles from './style.module.scss';
+import css from './style.module.scss';
 import modalTransition from '../../styles/transitions/fade.module.scss';
 
 const ContactBtn = () => {
@@ -16,9 +16,9 @@ const ContactBtn = () => {
 
   return (
     <>
-      <button className={styles.support} onClick={handleClickSupportBtn}>
+      <button className={css.support} onClick={handleClickSupportBtn}>
         <Message width={30} height={30} fill="#fff" />
-        <span className={styles.dots}>
+        <span className={css.dots}>
           <span></span>
           <span></span>
           <span></span>

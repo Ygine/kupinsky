@@ -1,13 +1,20 @@
 import { Link } from 'react-router-dom';
+import ScrollArrow from '../../hook/useScrollTop';
+
 import { ReactComponent as Whatsap } from '../../assets/images/whatsaap.svg';
 import { ReactComponent as Instagram } from '../../assets/images/instagram.svg';
+import { ReactComponent as Chevron } from '../../assets/images/chevron.svg';
 
 import css from './style.module.scss';
 
 const Footer = () => {
+  const { scrollTop } = ScrollArrow();
+
   return (
     <footer className={`${css.footer}`}>
-      <div className="css."></div>
+      <div onClick={scrollTop} className={css.arrowTop}>
+        <Chevron width={20} height={20} />
+      </div>
       <ul className={`${css.socialLinks}`}>
         <li className="item">
           <Link title="whatsapp" className={css.link} to="https://wa.me/4915228021236">
