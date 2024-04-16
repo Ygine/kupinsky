@@ -1,24 +1,14 @@
 import { Outlet } from 'react-router-dom';
-import { CustomLink } from './CustomLink';
 import ContactBtn from '../components/ContactBtn';
 import ArrowTop from '../components/ArrowTop';
 
 import Footer from '../components/Footer';
+import Header from '../components/Header';
 
 export default function Layout() {
   return (
     <>
-      <header className="">
-        <CustomLink to="/" className="">
-          Home
-        </CustomLink>
-        <CustomLink to="/posts" className="">
-          Blog
-        </CustomLink>
-        <CustomLink to="/about" className="">
-          About
-        </CustomLink>
-      </header>
+      <Header />
 
       <main className="main">
         <Outlet />

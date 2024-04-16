@@ -1,5 +1,78 @@
 .header{
-    background-color: #cee;
-    height: 100px;
+    position: fixed;
+    z-index: 999;
+    background-color: #3b3b3b;
     width: 100%;
+    min-height: 80px;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuButton{
+    min-height: 48px;
+    background: none;
+    cursor: pointer;
+    pointer-events: all;
+    appearance: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 13px;
+    margin-right: -13px;
+}
+
+.menuButtonIcon {
+    position: relative;
+    width: 20px;
+    height: 15px;
+    margin-top: 14px;
+
+    span{
+        right: 0;
+        left: 0;
+        transition: background .3s;
+        content: "";
+        display: block;
+        position: absolute;
+        height: 1px;
+        background: #fff;
+
+        &:before, &:after{
+            content: "";
+            display: block;
+            position: absolute;
+            height: 1px;
+            background: #fff;
+            left: 0;
+            width: 100%;
+        }
+
+        &:before{
+            top: -7px;
+            transition: background .3s,transform .3s,top .3s .3s;
+        }
+        &:after{
+            bottom: -7px;
+            transition: background .3s,transform .3s,bottom .3s .3s;
+        }
+    }
+
+    &.active{
+
+        span{
+            background: 0 0;
+
+            &:before{
+                top: 0;
+                transform: rotate(45deg);
+                transition: top .3s,transform .3s .3s;
+            }
+            &:after{
+                bottom: 0;
+                transform: rotate(-45deg);
+                transition: bottom .3s,transform .3s .3s;
+            }
+        }
+    }
 }
