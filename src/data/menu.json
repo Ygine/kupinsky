@@ -1,0 +1,8 @@
+[
+    {"name": "About me","default" : true, "url": "/about_me"},
+    {"name": "Produkt photography", "url": "/product_photography"},
+    {"name": "Pricing", "url": "/pricing"},
+    {"name": "Feedback", "url": "/reviews"},
+    {"name": "Contact", "url": "/contacts"},
+    {"name": "Impressum", "url": "/impression"}
+]

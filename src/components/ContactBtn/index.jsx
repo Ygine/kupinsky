@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { ReactComponent as Message } from '../../assets/images/message.svg';
 import { CSSTransition } from 'react-transition-group';
 import Modal from '../Modal';
-import SupportContent from '../SupportContent';
+import ContactContent from '../ContactContent';
 
 import css from './style.module.scss';
 import modalTransition from '../../styles/transitions/fade.module.scss';
@@ -27,7 +27,7 @@ const ContactBtn = () => {
 
       <CSSTransition classNames={modalTransition} in={modalIsOpen} timeout={300} unmountOnExit>
         <Modal closeModal={handleClickSupportBtn}>
-          <SupportContent />
+          <ContactContent />
         </Modal>
       </CSSTransition>
     </>
