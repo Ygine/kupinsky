@@ -72,9 +72,18 @@ video{
 }
 
 .main{
+  display: flex;
   flex-grow: 1;
-  min-height: 2000px;
   margin-top: 80px;
+
+  @media(min-width: 768px){
+    margin-top: 0;
+
+    .content{
+      flex-grow: 1;
+      padding: 40px;
+    }
+  }
 }
 
 .visually-hidden:not(:focus):not(:active),

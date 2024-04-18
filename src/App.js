@@ -9,12 +9,9 @@ import PricingPage from "./pages/Pricing"
 import ReviewsPage from "./pages/Reviews"
 import NotFoundPage from "./pages/NotFoundPage"
 
-import AuthProvider from "./hook/AuthProvider"
-
 const App = () => {
 
   return (
-    <AuthProvider>
     <Routes>
       <Route path="/" element={ <Layout />}>
         <Route index element={ <HomePage />}/>
@@ -27,7 +24,6 @@ const App = () => {
       </Route>
       <Route path="*" element={ <NotFoundPage />}/>
     </Routes>
-  </AuthProvider>
   );
 }
 

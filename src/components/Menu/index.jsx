@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group';
 import MenuData from '../../data/menu.json';
+import SocialLinks from '../SocialLinks';
 
 import css from './style.module.scss';
 import menuTransition from '../../styles/transitions/fade.module.scss';
@@ -15,7 +16,13 @@ const Menu = ({ menuIsOpen, setMenuIsOpen }) => {
 
   useEffect(() => {
     let timer = [];
-    const navList = document.querySelectorAll('nav > li');
+    const navList = document.querySelectorAll('nav > li, #social_menu');
+
+    if (menuIsOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
 
     for (let i = 0; i < navList.length; i++) {
       setTimeout(() => {
@@ -44,6 +51,8 @@ const Menu = ({ menuIsOpen, setMenuIsOpen }) => {
               </li>
             ))}
           </nav>
+
+          <SocialLinks id="social_menu" className={css.socialsInMenu} />
         </div>
       </div>
     </CSSTransition>

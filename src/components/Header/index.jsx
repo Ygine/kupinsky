@@ -13,11 +13,13 @@ const Header = () => {
   return (
     <>
       <div className={css.header}>
-        <Link>
-          <img width={50} height={50} src={LogoImage} alt="logo" />
-        </Link>
+        {!menuIsOpen && (
+          <Link to="/about_me">
+            <img width={50} height={50} src={LogoImage} alt="logo" />
+          </Link>
+        )}
         <button onClick={handleMenuOpen} class={css.menuButton} label="menu" type="button">
-          <div class={`${css.menuButtonIcon}  ${menuIsOpen ? css.active : ''}`}>
+          <div className={`${css.menuButtonIcon}  ${menuIsOpen ? css.active : ''}`}>
             <span></span>
           </div>
         </button>

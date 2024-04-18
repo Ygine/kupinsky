@@ -2,12 +2,12 @@ import { useState } from 'react';
 import { ReactComponent as Message } from '../../assets/images/message.svg';
 import { CSSTransition } from 'react-transition-group';
 import Modal from '../Modal';
-import ContactContent from '../ContactContent';
+import TriggerContent from '../TriggerContent';
 
 import css from './style.module.scss';
 import modalTransition from '../../styles/transitions/fade.module.scss';
 
-const ContactBtn = () => {
+const TriggerBtn = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const handleClickSupportBtn = (e) => {
@@ -27,11 +27,11 @@ const ContactBtn = () => {
 
       <CSSTransition classNames={modalTransition} in={modalIsOpen} timeout={300} unmountOnExit>
         <Modal closeModal={handleClickSupportBtn}>
-          <ContactContent />
+          <TriggerContent />
         </Modal>
       </CSSTransition>
     </>
   );
 };
 
-export default ContactBtn;
+export default TriggerBtn;

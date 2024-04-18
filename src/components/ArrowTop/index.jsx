@@ -1,4 +1,4 @@
-import ScrollArrow from '../../hook/useScrollTop';
+import ScrollArrow from '../../hook/useScrollTop.js';
 import { ReactComponent as ArrowUpImage } from '../../assets/images/arrowUp.svg';
 import css from './style.module.scss';
 

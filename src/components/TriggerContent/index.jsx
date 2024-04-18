@@ -1,11 +1,11 @@
 import Button from '../Button';
-import { VCcard } from '../../hook/useVCcard';
+import { VCcard } from '../../hook/useVCcard.js';
 
 import AvatarImg from '../../assets/images/logo.jpg';
 import { ReactComponent as WhatsapIcon } from '../../assets/images/whatsaap.svg';
 import css from './style.module.scss';
 
-const SupportContent = () => {
+const TriggerContent = () => {
   const { downloadTxtFile, CreateVCard } = VCcard();
   const handelClickVcf = () => {
     downloadTxtFile(CreateVCard());
@@ -29,4 +29,4 @@ const SupportContent = () => {
   );
 };
 
-export default SupportContent;
+export default TriggerContent;
