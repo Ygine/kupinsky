@@ -1,0 +1,26 @@
+.alert{
+    position: relative;
+    margin-bottom: 10px;
+    padding: 25px;
+    background-color: #ff626240;
+    color: #555;
+    font-size: 12px;
+    text-align: left;
+    font-size: 12px;
+
+    .title{
+        margin-bottom: 10px;
+    }
+
+    .btn{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+
+    ul{
+        list-style: disc;
+        padding-left: 15px;
+    }
+}
