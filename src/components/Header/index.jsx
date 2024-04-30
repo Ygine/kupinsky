@@ -18,7 +18,7 @@ const Header = () => {
             <img width={50} height={50} src={LogoImage} alt="logo" />
           </Link>
         )}
-        <button onClick={handleMenuOpen} class={css.menuButton} label="menu" type="button">
+        <button onClick={handleMenuOpen} className={css.menuButton} label="menu" type="button">
           <div className={`${css.menuButtonIcon}  ${menuIsOpen ? css.active : ''}`}>
             <span></span>
           </div>
