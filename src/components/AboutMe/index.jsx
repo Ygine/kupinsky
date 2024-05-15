@@ -37,15 +37,47 @@ const AboutMe = () => {
       <p>Lass uns gemeinsam;
         deine Produkte ins Rampenlicht rücken!</p>
 
-      <img src={LazyImage} className={css.produktfotografin}/>
+      <img src={LazyImage} alt={''} className={css.produktfotografin}/>
       <p className={css.title}>Meine Zertifikate</p>
 
-      <img src={certificateImage} className={css.produktfotografin}/>
+      <img src={certificateImage} alt={''} className={css.produktfotografin}/>
 
-      {/*<div className={css.imgWrap}>*/}
-      {/*  <img src={certificate2Image} className={css.produktfotografin}/>*/}
-      {/*  <img src={certificate3Image} className={css.produktfotografin}/>*/}
-      {/*</div>*/}
+      <div className={css.imgWrap}>
+        <img src={certificate2Image} alt={''} className={css.produktfotografin}/>
+        <img src={certificate3Image} alt={''} className={css.produktfotografin}/>
+      </div>
+
+      <div className={css.textWrap}>
+        <h2>Produktfotograf gesucht?</h2>
+        <div>
+          <p>Suchst Du nach einem erfahrenen Produktfotografen, der Deine Produkte optimal in Szene setzt? Dein
+            Streben nach professionellen Bildern, die potenzielle Kunden ansprechen und Deine Verkäufe steigern, endet
+            hier.</p>
+          <p>Als erfahrenere Produktfotografin biete ich maßgeschneiderte Lösungen für Deine fotografischen
+            Anforderungen.
+            Egal, ob es sich um E-Commerce, Amazon-Listings oder Werbematerialien handelt, meine
+            Leidenschaft und Expertise für die Produktfotografie wird Deine Produkte ins Rampenlicht rücken. Mit einem
+            Auge für Details und einem Fokus auf Qualität arbeite ich eng mit Dir zusammen, um Deine Vision zum Leben
+            zu erwecken. </p>
+        </div>
+      </div>
+
+      <div className={css.textWrap}>
+        <h2>Produktfotografie in Hamburg</h2>
+        <div>
+          <p>Ein professionelles Produktfoto oder ein Packshot, erstellt von einem erfahrenen Produktfotografen, hat die
+            Fähigkeit, den Umsatz deines Unternehmens zu steigern und eine breitere Zielgruppe anzusprechen. Meine
+            Produktfotos zeichnen sich durch <b>hohe Auflösung, individuelle Nachbearbeitung, gezielte
+              Zielgruppenansprache und die Betonung der wichtigsten Details</b> aus. Ich schaffe hochwertigen
+            Produktfotografie Momente, die deine Kunden in den Bann ziehen und die Kaufentscheidung bereits
+            in den ersten Sekunden beeinflussen werden.</p>
+          <p>Die Dienstleistungen von Daria Medved bieten ein hervorragendes Preis-Leistungs-Verhältnis. Statt sich
+            selbst
+            in der Produktfotografie zu versuchen, überlass diese Herausforderung lieber einem professionellen
+            Produktfotografen. Lass uns wirkungsvolle Produktfotos, Produktaufnahmen, Packshots und mehr erstellen, die
+            perfekt zu deinen Vorstellungen passen.</p>
+        </div>
+      </div>
     </div>
 
   );

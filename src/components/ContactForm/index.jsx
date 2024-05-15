@@ -1,13 +1,14 @@
 import { useState } from 'react';
 import Button from '../Button';
 import AlertBox from '../AlertBox';
+import Container from '../Shared/Container';
 import { CSSTransition } from 'react-transition-group';
 
 import css from './style.module.scss';
 import alertTransition from '../../styles/transitions/fade.module.scss';
-import formImage from '../../assets/images/photo_1.jpg';
 
-const ContactForm = () => {
+
+const ContactForm = ({topContent, title, img}) => {
   const [showAlert, setShowAlert] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
@@ -52,13 +53,17 @@ const ContactForm = () => {
 
   return (
     <section className={css.formSection}>
-      <div className={css.topContent}>
-        <h2>Mache deine Projekte zu einem WOW mit mir.</h2>
-      </div>
+      {topContent && (
+        <div className={css.topContent}>
+          <h2>{topContent}</h2>
+        </div>
+      )}
 
+      <Container>
       <div className={css.formContent}>
-        <img src={formImage} alt="form avater" />
+        <img src={img} alt="form avater" />
         <div className={css.formWrap}>
+          {title && (<h2 className={css.title}>{title}</h2>)}
           <CSSTransition classNames={alertTransition} in={showAlert} timeout={300} unmountOnExit>
             <AlertBox errors={formData.errors} setShowAlert={setShowAlert} />
           </CSSTransition>
@@ -96,6 +101,7 @@ const ContactForm = () => {
           </form>
         </div>
       </div>
+      </Container>
     </section>
   );
 };

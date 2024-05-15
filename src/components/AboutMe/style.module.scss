@@ -1,8 +1,14 @@
 .content{
   padding: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
 
   p{
-    margin-bottom: 12px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: 767px) {
+    padding: 40px;
   }
 }
 .title{
@@ -29,9 +35,43 @@
 
 .produktfotografin{
   margin: 40px auto;
-  max-width: 550px;
+  //max-width: 500px;
 }
 
 .imgWrap{
   display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+
+  img{
+    margin: 0;
+  }
+
+  @media (min-width: 767px) {
+    justify-content: space-between;
+    .produktfotografin{
+      width: calc(50% - 10px);
+    }
+  }
+}
+
+.textWrap{
+  margin-bottom: 40px;
+  font-family: Montserrat,sans-serif;
+
+  h2{
+    font-size: 35px;
+    margin-bottom: 25px;
+    font-weight: 400;
+  }
+
+  @media (min-width: 767px) {
+    display: flex;
+
+    h2{
+      width: 33%;
+      max-width: 282px;
+      margin-right: 35px;
+    }
+  }
 }

@@ -12,6 +12,10 @@
     position: -webkit-sticky; /* Safari */
     top: 0;
 
+  @media(min-width: 767px){
+    min-width: 220px;
+    padding: 40px 15px;
+  }
   @media(min-width: 1400px){
     min-width: 320px;
   }
@@ -76,6 +80,6 @@
     }
 
     & > div > p:last-child{
-        font-size: 12px;
+        font-size: 11px;
     }
 }
